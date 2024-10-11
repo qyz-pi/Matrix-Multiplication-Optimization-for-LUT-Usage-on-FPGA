@@ -1,4 +1,4 @@
-## Report
+# Matrix-Multiplication-Optimization-for-LUT-Usage-on-FPGA
 
 The Methodology section offers an in-depth exposition of the principles and design strategies pertaining to all the algorithms and functionalities implemented. The Results and Discussion section elucidates the analysis and discourse on the outcomes of the comparative experiments. The Explanation for Uploaded Files section provides insights on how to comprehend and utilize the files uploaded.
 
