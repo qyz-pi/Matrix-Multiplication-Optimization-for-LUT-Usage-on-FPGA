@@ -211,7 +211,7 @@ This section aims to demonstrate that optimized matrix multiplication, compared 
 
 The specific data can be found on page 8 and page 9 of `pre_0516`.
 
-![chart6](C:\Users\ZENG\Downloads\Project\Matrix-Multiplication-Optimization-for-LUT-Usage-on-FPGA\figure\chart6.png)
+![chart6](\figure\chart6.png)
 
 
 Please note that the Baseline referred to here is Baseline3: Matrix Multiplication (shift and add) method. The optimized approach demonstrates greater savings in terms of LUT resources compared to the Baseline method, and the advantage of savings increases with the increasing size of the matrices and the increasing input vector bit width.
@@ -224,7 +224,7 @@ The specific data can be found on page 5-7, page 9-11, and page 14-17 of `pre_05
 
 Please note that the Baseline referred to here is Baseline2: Matrix Multiplication (hardcoded). In addition, for the Baseline2: Matrix Multiplication (hardcoded) approach, the synthesis strategy in this case is set with `max-dsp` as 0 to avoid the utilization of DSP resources.
 
-![chart8](C:\Users\ZENG\Downloads\Project\Matrix-Multiplication-Optimization-for-LUT-Usage-on-FPGA\figure\chart8.png)
+![chart8](\figure\chart8.png)
 
 For a 3x3 16-bit matrix, the gap between the Baseline and Optimized methods increases as the input bit width increases. The Baseline method consumes more LUT resources.
 
