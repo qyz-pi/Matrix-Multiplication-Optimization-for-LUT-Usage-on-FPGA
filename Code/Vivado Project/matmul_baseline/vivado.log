@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Jun 12 03:15:23 2023
+# Process ID: 22444
+# Current directory: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8476 C:\Users\ZENG\Desktop\qyz\internship\Project\Hardware\matmul_baseline\matmul_baseline.xpr
+# Log file: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/vivado.log
+# Journal file: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1243.441 ; gain = 0.000
+update_compile_order -fileset sources_1
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 03:19:21 2023...

@@ -1,0 +1,20 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 143aa8f4dd664fcda9f1ce8d4eb99278 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot matmul_tb_behav xil_defaultlib.matmul_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'input0' [C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv:70]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'input1' [C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv:71]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'input2' [C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv:72]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 32 for port 'output0' [C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv:73]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 32 for port 'output1' [C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 32 for port 'output2' [C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv:75]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrix_mult_single_bit
+Compiling module xil_defaultlib.matmul_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot matmul_tb_behav

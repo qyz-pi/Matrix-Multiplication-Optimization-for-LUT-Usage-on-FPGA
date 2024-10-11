@@ -1,0 +1,578 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 14936
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jun 09 14:19:54 EDT 2023
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ZENG
+User home directory: C:/Users/ZENG
+User working directory: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.1
+RDI_DATADIR: C:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/ZENG/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/ZENG/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/ZENG/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/vivado.log
+Vivado journal file: 	C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/vivado.jou
+Engine tmp dir: 	C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/.Xil/Vivado-14936-DESKTOP-BQQSSJE
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.1
+XILINX_SDK: C:/Xilinx/Vitis/2021.1
+XILINX_VITIS: C:/Xilinx/Vitis/2021.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,250 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ZENG\Desktop\qyz\internship\Project\Hardware\matmul_baseline\matmul_baseline.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 83 MB (+84241kb) [00:00:10]
+// [Engine Memory]: 1,250 MB (+1159047kb) [00:00:10]
+// [GUI Memory]: 92 MB (+5075kb) [00:00:11]
+// [GUI Memory]: 104 MB (+8049kb) [00:00:12]
+// [GUI Memory]: 117 MB (+7877kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  4554 ms.
+// Tcl Message: open_project C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,250 MB. GUI used memory: 70 MB. Current time: 6/9/23, 2:19:54 PM EDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1243.922 ; gain = 0.000 
+// Project name: matmul_baseline; location: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 136 MB (+13588kb) [00:00:49]
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // an
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // aa
+dismissDialog("Create Source File"); // F
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "matrix_single_bit"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 32 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matrix_single_bit.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matrix_single_bit.v 
+// [GUI Memory]: 147 MB (+4506kb) [00:01:25]
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 525ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 183 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_single_bit (matrix_single_bit.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_single_bit (matrix_single_bit.v)]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("matrix_single_bit.v", 121, 620); // bP
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matmul_hardcoded (matmul_hardcoded.sv)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matmul_hardcoded (matmul_hardcoded.sv)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_single_bit (matrix_single_bit.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_single_bit (matrix_single_bit.v)]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("matrix_single_bit.v", 84, 618); // bP
+typeControlKey((HResource) null, "matrix_single_bit.v", 'v'); // bP
+selectCodeEditor("matrix_single_bit.v", 203, 136); // bP
+selectCodeEditor("matrix_single_bit.v", 22, 155); // bP
+selectCodeEditor("matrix_single_bit.v", 68, 256); // bP
+selectCodeEditor("matrix_single_bit.v", 198, 141); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_mult (matrix_mult_baseline_3x3.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_mult (matrix_mult_baseline_3x3.v), mult00 : shift_and_add (shift_and_add.v)]", 2, false, false, false, false, false, true); // D - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_mult (matrix_mult_baseline_3x3.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matmul_hardcoded (matmul_hardcoded.sv)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matmul_hardcoded (matmul_hardcoded.sv)]", 5, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_mult_single_bit (matrix_single_bit.v)]", 6, false); // D
+// [GUI Memory]: 156 MB (+2293kb) [00:06:00]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_mult_single_bit (matrix_single_bit.v)]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("matrix_single_bit.v", 415, 342); // bP
+selectCodeEditor("matrix_single_bit.v", 418, 332); // bP
+selectCodeEditor("matrix_single_bit.v", 426, 335); // bP
+selectCodeEditor("matrix_single_bit.v", 633, 385); // bP
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 464ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 26 seconds
+selectCodeEditor("matrix_single_bit.v", 417, 448); // bP
+selectCodeEditor("matrix_single_bit.v", 422, 447); // bP
+selectCodeEditor("matrix_single_bit.v", 663, 492); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("matrix_single_bit.v", 661, 328); // bP
+selectCodeEditor("matrix_single_bit.v", 102, 443); // bP
+selectCodeEditor("matrix_single_bit.v", 34, 486); // bP
+typeControlKey((HResource) null, "matrix_single_bit.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 123 seconds
+selectCodeEditor("matrix_single_bit.v", 49, 87); // bP
+selectCodeEditor("matrix_single_bit.v", 37, 85); // bP
+// Elapsed time: 45 seconds
+selectCodeEditor("matrix_single_bit.v", 153, 319); // bP
+selectCodeEditor("matrix_single_bit.v", 33, 233); // bP
+typeControlKey((HResource) null, "matrix_single_bit.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 50 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, matmul_tb (matmul_tb.sv)]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, matmul_tb (matmul_tb.sv)]", 9, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("matmul_tb.sv", 18, 346); // bP
+selectCodeEditor("matmul_tb.sv", 173, 548); // bP
+selectCodeEditor("matmul_tb.sv", 190, 559); // bP
+selectCodeEditor("matmul_tb.sv", 58, 422); // bP
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matrix_mult_baseline_3x3.v", 3); // m
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matrix_single_bit.v", 1); // m
+// Elapsed time: 128 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matmul_tb.sv", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matrix_single_bit.v", 1); // m
+selectCodeEditor("matrix_single_bit.v", 94, 4); // bP
+selectCodeEditor("matrix_single_bit.v", 91, 414); // bP
+selectCodeEditor("matrix_single_bit.v", 97, 431); // bP
+typeControlKey((HResource) null, "matrix_single_bit.v", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matmul_tb.sv", 4); // m
+selectCodeEditor("matmul_tb.sv", 141, 579); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'v'); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("matmul_tb.sv", 118, 564); // bP
+selectCodeEditor("matmul_tb.sv", 472, 244); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matrix_single_bit.v", 1); // m
+selectCodeEditor("matrix_single_bit.v", 209, 336); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("matrix_single_bit.v", 415, 361); // bP
+selectCodeEditor("matrix_single_bit.v", 143, 286); // bP
+selectCodeEditor("matrix_single_bit.v", 325, 274); // bP
+selectCodeEditor("matrix_single_bit.v", 318, 300); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matmul_tb.sv", 4); // m
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matmul_tb.sv", 4, false, true); // m - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectCodeEditor("matmul_tb.sv", 73, 581); // bP
+selectCodeEditor("matmul_tb.sv", 68, 570); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("matmul_tb.sv", 180, 561); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'c'); // bP
+selectCodeEditor("matmul_tb.sv", 203, 567); // bP
+selectCodeEditor("matmul_tb.sv", 39, 585); // bP
+selectCodeEditor("matmul_tb.sv", 189, 571); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'v'); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'v'); // bP
+selectCodeEditor("matmul_tb.sv", 59, 589); // bP
+selectCodeEditor("matmul_tb.sv", 64, 616); // bP
+selectCodeEditor("matmul_tb.sv", 132, 581); // bP
+selectCodeEditor("matmul_tb.sv", 135, 614); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("matmul_tb.sv", 218, 570); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'v'); // bP
+selectCodeEditor("matmul_tb.sv", 8, 584); // bP
+selectCodeEditor("matmul_tb.sv", 118, 589); // bP
+selectCodeEditor("matmul_tb.sv", 284, 583); // bP
+selectCodeEditor("matmul_tb.sv", 209, 566); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'c'); // bP
+selectCodeEditor("matmul_tb.sv", 282, 561); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'v'); // bP
+typeControlKey((HResource) null, "matmul_tb.sv", 'v'); // bP
+selectCodeEditor("matmul_tb.sv", 154, 584); // bP
+selectCodeEditor("matmul_tb.sv", 154, 614); // bP
+selectCodeEditor("matmul_tb.sv", 212, 609); // bP
+selectCodeEditor("matmul_tb.sv", 244, 568); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("matmul_tb.sv", 184, 448); // bP
+selectCodeEditor("matmul_tb.sv", 187, 450); // bP
+selectCodeEditor("matmul_tb.sv", 187, 452); // bP
+selectCodeEditor("matmul_tb.sv", 180, 466); // bP
+selectCodeEditor("matmul_tb.sv", 251, 509); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'matmul_tb' INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'matmul_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj matmul_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matrix_single_bit.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module matrix_mult_single_bit INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module matmul_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 143aa8f4dd664fcda9f1ce8d4eb99278 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot matmul_tb_behav xil_defaultlib.matmul_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1243.922 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 8 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // az
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g: FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3633] port 'output0' is already connected [C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv:74]. ]", 6, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ZENG\Desktop\qyz\internship\Project\Hardware\matmul_baseline\matmul_baseline.srcs\sim_1\new\matmul_tb.sv;-;;-;16;-;line;-;74;-;;-;16;-;"); // ah
+selectCodeEditor("matmul_tb.sv", 69, 178); // bP
+selectCodeEditor("matmul_tb.sv", 69, 213); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -L uvm -prj matmul_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module matmul_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 143aa8f4dd664fcda9f1ce8d4eb99278 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot matmul_tb_behav xil_defaultlib.matmul_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2021.1 (64-bit)   **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021   **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.  source C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim/xsim.dir/matmul_tb_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Fri Jun  9 14:37:26 2023... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "matmul_tb_behav -key {Behavioral:sim_1:Functional:matmul_tb} -tclbatch {matmul_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source matmul_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,250 MB. GUI used memory: 99 MB. Current time: 6/9/23, 2:37:29 PM EDT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'matmul_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1243.922 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "uut ; matrix_mult_single_bit ; Verilog Module", 1, "uut", 0, false); // c
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_0[15:0] ; 2a58 ; Array", 6, "2a58", 1, true); // c - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_1[15:0] ; af31 ; Array", 7, "af31", 1, true); // c - Node
+// Elapsed time: 24 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "output2[15:0] ; 7f71 ; Array", 5, "7f71", 1, true); // c - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_0[15:0] ; 2a58 ; Array", 6, "2a58", 1, true); // c - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_0[15:0] ; 2a58 ; Array", 6, "2a58", 1, true, false, false, false, true, false); // c - Popup Trigger - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "matmul_tb ; matmul_tb ; Verilog Module", 0, "matmul_tb", 0, true); // c - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "vec_out[0:2][15:0] ; Z,Z,32625 ; Array", 1, "Z,Z,32625", 1, true); // c - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "vec_out[0:2][15:0] ; Z,Z,32625 ; Array", 1, "Z,Z,32625", 1, true, false, false, false, true, false); // c - Popup Trigger - Node
+selectMenu("Radix"); // ak
+selectMenu("Radix"); // ak
+selectMenu("Radix"); // ak
+selectMenu("Radix"); // ak
+selectMenu("Radix"); // ak
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "COLS[31:0] ; 3 ; Array", 3, "COLS[31:0]", 0, true); // c - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "ROWS[31:0] ; 3 ; Array", 2, "ROWS[31:0]", 0, true); // c - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "uut ; matrix_mult_single_bit ; Verilog Module", 1, "uut", 0, false); // c
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_0[15:0] ; 2a58 ; Array", 6, "2a58", 1, true); // c - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_0[15:0] ; 2a58 ; Array", 6, "r_n2_0[15:0]", 0, true, false, false, false, true, false); // c - Popup Trigger - Node
+selectMenu("Radix"); // ak
+selectMenuItem((HResource) null, "Signed Decimal"); // ab
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+selectTreeTableHeader(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Value", 1); // c
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_1[15:0] ; af31 ; Array", 7, "af31", 1, true); // c - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_1[15:0] ; af31 ; Array", 7, "af31", 1, true, false, false, false, true, false); // c - Popup Trigger - Node
+selectMenu("Radix"); // ak
+selectMenuItem((HResource) null, "Signed Decimal"); // ab
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_2[15:0] ; a5e8 ; Array", 8, "a5e8", 1, true); // c - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "r_n2_2[15:0] ; a5e8 ; Array", 8, "a5e8", 1, true, false, false, false, true, false); // c - Popup Trigger - Node
+selectMenu("Radix"); // ak
+selectMenuItem((HResource) null, "Signed Decimal"); // ab
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "output2[15:0] ; 7f71 ; Array", 5, "7f71", 1, true); // c - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "output2[15:0] ; 7f71 ; Array", 5, "7f71", 1, true, false, false, false, true, false); // c - Popup Trigger - Node
+selectMenu("Radix"); // ak
+selectMenu("Radix"); // ak
+selectMenuItem((HResource) null, "Signed Decimal"); // ab
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,250 MB. GUI used memory: 97 MB. Current time: 6/9/23, 3:07:31 PM EDT
+// Elapsed time: 2447 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matmul_tb.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matrix_mult_baseline_3x3.v", 2); // m
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "matrix_single_bit.v", 0); // m
+selectCodeEditor("matrix_single_bit.v", 36, 144); // bP
+typeControlKey((HResource) null, "matrix_single_bit.v", 'v'); // bP
+selectCodeEditor("matrix_single_bit.v", 362, 87); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // E
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b (cs):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// CommandFailedException: Unknown exception occurred
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2021.1 (64-bit)
+# SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Current time: Fri Jun 09 15:20:03 EDT 2023
+# Process ID (PID): 14936
+# OS: Windows 10
+# User: ZENG
+# Project: matmul_baseline
+# Part: xc7z020clg484-1
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.utils.e: ui.frmwork.cmd.CommandFailedException: Unknown exception occurred ui.frmwork.cmd.CommandFailedException: Unknown exception occurred
+	at ui.views.simulator.executive.simulationi.SimulationExecutive_getTreeWindowData(Native Method)
+	at ui.views.N.c.a.a(SourceFile:255)
+	at ui.views.N.i.e.aIy(SourceFile:217)
+	at ui.views.N.i.o.kra(SourceFile:148)
+	at ui.views.N.f.d.handleTclEvent(SourceFile:241)
+	at ui.frmwork.a.o.c(SourceFile:42)
+	at ui.frmwork.E.i(SourceFile:216)
+	at ui.frmwork.E.fireTclEvent(SourceFile:139)
+	at ui.views.simulator.executive.simulationi.SimulationExecutive_setTreeWindowTreeHeight(Native Method)
+	at ui.views.N.c.a.b(SourceFile:675)
+	at ui.views.N.i.e.ksp(SourceFile:122)
+	at ui.views.N.i.h.componentResized(SourceFile:145)
+	at java.desktop/java.awt.Component.processComponentEvent(Component.java:6458)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6412)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4840)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ (See C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/vivado_pid14936.debug)
+*/

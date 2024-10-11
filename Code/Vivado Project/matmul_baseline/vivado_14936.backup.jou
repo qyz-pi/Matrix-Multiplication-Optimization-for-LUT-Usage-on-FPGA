@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jun  9 14:19:31 2023
+# Process ID: 14936
+# Current directory: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11112 C:\Users\ZENG\Desktop\qyz\internship\Project\Hardware\matmul_baseline\matmul_baseline.xpr
+# Log file: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/vivado.log
+# Journal file: C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matrix_single_bit.v w ]
+add_files C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matrix_single_bit.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source matmul_tb.tcl
+relaunch_sim

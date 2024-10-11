@@ -1,0 +1,13 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv,1686343180,systemVerilog,,,,matmul_tb,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matmul_generate.sv,1685558525,systemVerilog,,C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv,,matmul_generate,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matmul_hardcoded.sv,1685556057,systemVerilog,,C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv,,matmul_hardcoded,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matmul_parametrized.sv,1685559896,systemVerilog,,C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv,,matmul_parametrized,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sources_1/new/matrix_single_bit.v,1686343628,verilog,,,,matrix_mult_single_bit,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Resource/matrix_mult_baseline_3x3.v,1685560513,systemVerilog,,C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv,,matrix_mult,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Resource/output/matrix_multiplier_93.sv,1685559492,systemVerilog,,C:/Users/ZENG/Desktop/qyz/internship/Project/Hardware/matmul_baseline/matmul_baseline.srcs/sim_1/new/matmul_tb.sv,,matrix_multiplier,,uvm,,,,,,
+C:/Users/ZENG/Desktop/qyz/internship/Project/Resource/shift_and_add.v,1685560671,verilog,,,,shift_and_add,,uvm,,,,,,

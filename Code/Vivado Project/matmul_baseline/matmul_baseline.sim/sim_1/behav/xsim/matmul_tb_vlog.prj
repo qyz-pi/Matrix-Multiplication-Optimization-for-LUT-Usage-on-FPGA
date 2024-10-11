@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../matmul_baseline.srcs/sources_1/new/matrix_single_bit.v" \
+
+sv xil_defaultlib  \
+"../../../../matmul_baseline.srcs/sim_1/new/matmul_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
